@@ -5,7 +5,8 @@
 				<div class="row">
 					<div id="tg-twocolumns" class="tg-twocolumns">
 						<div class="col-md-12">
-							<form action="https://amragachiaup.com/includes/warish_inc_code.php" method="post">
+							<form action="{{route('warish.store')}}" method="POST">
+								@csrf
 								<input type="hidden" name="ap_date" class="form-control" placeholder="Date" value="2024-04-01">
 								<input type="hidden" name="ap_application" class="form-control" value="1">	
 								<div class="col-sm-12"><h4 class="ttle">আবেদনকারীর তথ্য   </h4></div>

@@ -54,6 +54,7 @@ Route::controller(ProkolpoController::class)->group(function () {
 
 Route::group(['prefix'=>'/warish'],function(){
         Route::get('/apply',[WarishController::class,'create'])->name('warish.create');
+        Route::post('/store',[WarishController::class,'store'])->name('warish.store');
     });
 Route::group(['prefix'=>'/family'],function(){
         Route::get('/apply',[FamilySonosController::class,'create'])->name('family.create');
